@@ -80,8 +80,7 @@ int Circle::getType()
 
 void Circle::showInfo()
 {
-	cout << "Ô²£¬°ë¾¶" << getR() << "£¬ÖÜ³¤";
-	cout << fixed << setprecision(2) << getCircumference() << endl;
+	cout << fixed << setprecision(2) << "åœ†ï¼ŒåŠå¾„" << getR() << "ï¼Œå‘¨é•¿" << getCircumference() << endl;
 }
 
 
@@ -135,8 +134,7 @@ int Rectangle::getType()
 
 void Rectangle::showInfo()
 {
-	cout << "³¤·½ÐÎ£¬³¤" << getL() << ",¿í" << getW() << "£¬ÖÜ³¤";
-	cout << fixed << setprecision(2) << getCircumference() << endl;
+	cout << fixed << setprecision(2) <<  "é•¿æ–¹å½¢ï¼Œé•¿" << getL() << ",å®½" << getW() << "ï¼Œå‘¨é•¿" << getCircumference() << endl;
 }
 
 class RightTriangle : public Shape
@@ -191,11 +189,6 @@ int RightTriangle::getType()
 
 void RightTriangle::showInfo()
 {
-	cout << "Èý½ÇÐÎ£¬Ö±½Ç±ß" << getR1() << "£¬Ö±½Ç±ß" << getR2() << "£¬ÖÜ³¤";
-	cout << fixed << setprecision(2) << getCircumference() << endl;
+	cout << fixed << setprecision(2) << "ä¸‰è§’å½¢ï¼Œç›´è§’è¾¹" << getR1() << "ï¼Œç›´è§’è¾¹" << getR2() << "ï¼Œå‘¨é•¿" << getCircumference() << endl;
 }
-
-
-
-
 #endif
